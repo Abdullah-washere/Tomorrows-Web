@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ghibli.css" />
+
+      <link href="canvas.png" rel="shortcut icon" />
+
+    <title> Ghibli Art Museum </title>
+
+  </head>
+
+  <header>
+    <div class="container container_solid">
+
+      <div id="battery-status">
+        <p>Battery Level: <span id="battery-level"></span></p>
+        <p>Charging Status: <span id="battery-charging"></span></p>
+        <p> Time Left: <span id="battery-time-left"></span></p>
+      </div>
+
+
+
+      <div class="title_wrapper">
+        <h1>STUDIO GHIBLI ART MUSEUM</h1>
+
+
+      </div>
+
+      <button id="fullscreen-button">Toggle Full Screen</button>
+
+    </div>
+
+    <div class="container container_image" aria-hidden="true">
+      <div class="title_wrapper">
+        <h1>STUDIO GHIBLI ART MUSEUM</h1>
+      </div>
+    </div>
+
+  </header>
+
+  <h1 class="gallery">ART GALLERY</h1>
+
+  <div class="band">
+    <div class="item-1">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(https://4.bp.blogspot.com/-ZRElQoQAuhw/Xps9YnelQ4I/AAAAAAAAXnA/1uhUjeaTj5wtEoCYLayDHWFCiWqlt7DIACLcBGAsYHQ/w919-h516-p-k-no-nu/city-sea-anime-scenery-digital-art-uhdpaper.com-4K-6.1300-wp.thumbnail.jpg);"></div>
+        <article>
+          <h1>Spirited Away</h1>
+          <p>Once you've met someone you never really forget them. It just takes a while for your memories to return.</p>
+          <span>Hayao Miyazaki</span>
+        </article>
+      </a>
+      <div class="leap">
+        <button id="btnGo1">Click to Pick a Colour</button>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="item-2">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/YrAoZYC.png);"></div>
+        <article>
+          <h1>Tropic of the Train</h1>
+          <p>There’s no way we could meet. But one thing is certain. If we see each other, we’ll know.</p>
+          <span>Satoshi Kon</span>
+        </article>
+      </a>
+    </div>
+
+
+    <div class="item-3">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/1QO5I3R.png);"></div>
+        <article>
+          <h1>Millenium Station</h1>
+          <p>Even if words are lost, tradition should be handed down.</p>
+          <span>Satoshi Kon</span>
+        </article>
+      </a>
+    </div>
+
+
+
+
+
+    <div class="item-4">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/1JJkFaS.png);"></div>
+        <article>
+          <h1>Leap Through Time</h1>
+          <p>You don’t get to choose who or when you meet. However, you do get to choose who you hold onto.</p>
+          <span>Mamoru Hosoda</span>
+        </article>
+      </a>
+
+
+    </div>
+    <div class="item-5">
+
+
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/gm63qxG.png);"></div>
+        <article>
+          <h1>Summer Starter</h1>
+          <p>Don't spend time beating on a wall, hoping to transform it into a door.</p>
+          <span>Mamoru Hosoda</span>
+        </article>
+      </a>
+    </div>
+
+
+    <div class="item-6">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/UVD7f0B.png);"></div>
+        <article>
+          <h1>Your Name</h1>
+          <p>There are no mistakes, only opportunities.</p>
+          <span>Makoto Shinkai</span>
+        </article>
+      </a>
+    </div>
+
+
+    <div class="item-6">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/AluA4jy.jpeg);"></div>
+        <article>
+          <h1>Weathering with You</h1>
+          <p>Nothing can stay unchanged. Fun things… Happy things… They can’t possibly remain the same.</p>
+          <span>Makoto Shinkai</span>
+        </article>
+      </a>
+
+    </div>
+    <button id="btnGo">Click to Pick a Colour</button>
+
+
+
+    <div class="item-7">
+      <a href="" class="card">
+        <div class="thumb" style="background-image: url(images/NO7e4fB.png);"></div>
+        <article>
+          <h1>Clannad: After Story</h1>
+          <p>Be happy for this moment. This moment is your life.</p>
+
+<div>
+</div>
+
+          <span>Jun Maeda</span>
+        </article>
+      </a>
+
+    </div>
+  </div>
+  <div>
+
+  </div>
+
+
+  <footer>
+
+    <p>
+        </p>
+        <div class="cbox">
+        <h1>Eye Dropper Result</h1>
+          <p><span id="result"></span></p>
+        </div>
+<br> <br>
+
+
+    <video id="video" src="/Users/abdullahsualeheen/Downloads/videoplayback (1).webm" controls></video>
+
+<div class="vbutton">
+  <br>
+  <button id="pip-button">Toggle Picture-in-Picture</button>
+
+</div>
+
+
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
+
+
+
+</html>

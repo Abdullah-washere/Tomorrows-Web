@@ -1,0 +1,463 @@
+/* This is the main HTML element */
+html {
+background: #6ca2bd;
+font-family: system-ui;
+-webkit-font-smoothing: antialiased;
+margin: auto;
+scroll-behavior: smooth;
+}
+
+/* This is the header element */
+header {
+height: 200vh;
+width: 90%;
+max-width: 1240px;
+margin: 0 auto;
+}
+
+/* This is the container element */
+.container {
+clip: rect(0, auto, auto, 0);
+overflow: hidden;
+position: absolute;
+height: 100vh;
+left: 0;
+width: 100%;
+-webkit-mask-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+}
+
+#btnGo1 {
+	{ display: block;
+  margin: 0 auto; padding: 8px 20px;border: none;/* position: fixed; *//* left: 70%; */text-align: center;/* margin-left: -47px; */margin-right: -45.5vw;border-radius: 23px;background-color: #333;color: #fff;font-size: 12px;/* height: 22vh; *//* margin: auto; *//* width: 50vw; */cursor: pointer;}
+}
+
+/* This is the container_solid element */
+.container_solid {
+background: #492323;
+top: 0;
+}
+
+/* This is the title_wrapper element within the container_solid element */
+.container_solid .title_wrapper h1 {
+background: url(images/ghnn.jpeg);
+background-size: 100vw auto;
+background-position: center;
+text-shadow: 2px 2px 20px #000000;
+background-clip: text;
+font-family: 'Antic Didone', serif;
+-webkit-background-clip: text;
+color: #ff8f88;
+}
+
+/* This is the title_wrapper element */
+.title_wrapper {
+position: fixed;
+display: block;
+margin: auto;
+width: 100%;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+/* This is the h1 element within the title_wrapper element */
+.title_wrapper h1 {
+text-align: center;
+font-size: 64px;
+text-transform: uppercase;
+text-align: center;
+font-family: 'Antic Didone', serif;
+font-weight: 900;
+}
+
+/* This is the container_image element */
+.container_image {
+background-image: url(images/ghnn.jpeg);
+background-size: 100vw auto;
+background-position: center;
+background-attachment: fixed;
+	top: 100vh;
+}
+
+/* This is the h1 element within the title_wrapper element within the container_image element */
+.container_image .title_wrapper h1 {
+color: white;
+text-shadow: 2px 2px 8px #ff4f4f;
+}
+
+/* This is the section element */
+section {
+min-height: 100vh;
+padding: 2em;
+margin: auto;
+max-width: 800px;
+}
+
+/* This is the h2 element within the section element */
+section h2 {
+font-family: 'Fraunces', serif;
+}
+
+/* This is the p element within the section element */
+section p {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Add some shadow and change the font size and color for the heading
+*/
+.gallery {
+font-size: 50px;
+text-align: center;
+text-shadow: 2px 2px #ff0000;
+color: burlywood;
+}
+
+/*
+Set up a grid layout for the band section
+*/
+.band {
+width: 90%;
+max-width: 1630px;
+margin: 133px auto;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-gap: 30px;
+}
+
+/*
+Style the cards in the band section
+*/
+.card {
+background: white;
+text-decoration: none;
+color: #444;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+display: flex;
+flex-direction: column;
+min-height: 100%;
+font-family: 'Antic Didone', serif;
+position: relative;
+top: 0;
+transition: all .1s ease-in;
+}
+
+/*
+Add some hover effects to the cards
+*/
+.card:hover {
+top: -2px;
+box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+/*
+Style the article element within the cards
+*/
+.card article {
+padding: 20px;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+/*
+Style the headings and paragraphs within the cards
+*/
+.card h1 {
+font-size: 20px;
+margin: 0;
+font-family: 'Antic Didone', serif;
+color: #333;
+}
+
+.card p {
+flex: 1;
+line-height: 1.4;
+}
+
+/*
+Style the span elements within the cards
+*/
+.card span {
+font-size: 12px;
+font-weight: bold;
+color: #999;
+text-transform: uppercase;
+	letter-spacing: .05em;
+	margin: 2em 0 0 0;
+}
+
+
+.card .thumb {
+padding-bottom: 60%;
+background-size: cover;
+background-position: center center;
+}
+*/
+
+/*
+Media query to adjust the grid layout for screens between 480px and 800px wide
+*/
+@media screen and (min-width: 480px) and (max-width: 800px) {
+.band {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/*
+Media query to adjust the grid layout for screens between 800px and 1024px wide
+*/
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+.band {
+grid-template-columns: 3fr 2fr;
+}
+
+	.item-1 {
+		grid-column: 1 / span 2;
+	}
+
+	.item-1 h1 {
+		font-size: 24px;
+	}
+
+	.item-7 {
+		grid-column: 1 / span 2;
+	}
+
+	.item-7 h1 {
+		font-size: 24px;
+	}
+}
+
+/*
+Media query to adjust the grid layout for screens between 1024px and 1440px wide
+*/
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+.band {
+grid-template-columns: 1fr 1fr;
+}
+
+	.item-1 {
+		grid-column: 1 / span 2;
+	}
+
+	.item-7 {
+		grid-column: 1 / span 2;
+	}
+}
+
+
+
+
+
+/* Set default font family and reset margins and padding */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+}
+
+/* Style the header h1 element */
+header h1 {
+  margin: 0;
+}
+
+/* Style the nav element and center its content */
+nav {
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/* Reset list style and margins/padding for nav ul element */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Display nav li elements as inline blocks */
+nav li {
+  display: inline-block;
+}
+
+/* Style nav a elements and remove text decoration */
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* main element styles */
+main {
+margin: 20px;
+}
+
+/* footer element styles */
+footer {background-color: #319acb;color: #fb8500;padding: 0px;text-shadow: 0px 0px #219ebc;margin: 6vw;text-align: center;}
+
+/* button element styles */
+ button {padding: 8px 20px;border: none;/* position: fixed; *//* left: 70%; */text-align: center;/* margin-left: -47px; */margin-right: -45.5vw;border-radius: 23px;background-color: #333;color: #fff;font-size: 12px;/* height: 22vh; *//* margin: auto; *//* width: 50vw; */cursor: pointer;}
+
+
+
+/* battery-status element styles */
+#battery-status {/* margin: 20px 0; */font-size: 12px;text-align: left;color: #ffa39e;font-weight: bold;}
+
+/* selected-color element styles */
+#selected-color {
+width: 50px;
+height: 50px;
+border: 1px solid #333;
+margin: 20px 0;
+}
+
+/* result element styles */
+#result {padding: 1.2rem 1rem;margin: 3px 1rem;font-size: 2rem;/* align-items: center; */border-left: 6rem solid transparent;border-left-color: transparent;text-align: center;}
+
+/* video element styles */
+#video {
+height: 100%;
+width: 100%;
+}
+
+/* inbtn class styles */
+.inbtn {
+
+}
+
+/* resultin element styles */
+#resultin{
+
+}
+#fullscreen-button {
+  /* background-color: #4e2021; */
+  /* border-color: black; */
+  border: 21px;
+  border-radius: 8px;
+  /* background-image: url('/path/to/image.jpg'); */
+  /* background-size: cover; */
+  /* height: 100%; */
+  width: 100%;
+  position: fixed;
+  /* top: 50.3vw; */
+  left: 0;
+  z-index: 9999;
+  background-color: #5c3536;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 16px;
+  position: absolute;
+  right:    0;
+  bottom:   0;
+}
+
+#fullscreen-button:hover {
+  background-color: #ff8f88;
+}
+
+.cbox{
+	height:150px;
+	width:300px;
+	background: #023047;
+	/*box-shadow:0 1px 2px rgba(0,0,0,.2);*/
+	box-shadow:0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+	border-radius: 20px;
+	margin: auto;
+	width: 50%;
+	border: 3px solid #ffeb3b;
+	padding: 10px;
+}
+
+
+
+{
+	padding: 8px 20px;border: none;/* position: fixed; *//* left: 70%; */text-align: center;/* margin-left: -47px; */margin-right: -45.5vw;border-radius: 23px;background-color: #333;color: #fff;font-size: 12px;/* height: 22vh; *//* margin: auto; *//* width: 50vw; */cursor: pointer;
+
+}
+
+.leap{
+	/* padding: 8px 20px; */
+	border: none;
+	position: absolute;
+	left: 7%;
+	text-align: center;
+	margin-left: -47px;
+	margin-right: -45.5vw;
+	/* border-radius: 23px; */
+	/* background-color: #333; */
+	color: #fff;
+	/* font-size: 12px; */
+	/* height: 22vh; */
+	margin: auto;
+	width: 41vw;
+	cursor: pointer;
+	/* width: 50%; */
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.leapp{
+	/* padding: 8px 20px; */
+	/* border: none; */
+	/* position: fixed; */
+	/* left: 70%; */
+	text-align: center;
+	/* margin-left: -47px; */
+	/* margin-right: -45.5vw; */
+	border-radius: 23px;
+	/* background-color: #333; */
+	color: #fff;
+	font-size: 12px;
+	/* height: 22vh; */
+	margin: auto;
+	/* width: 50vw; */
+	cursor: pointer;
+	width: 50%;
+}
+
+.vbutton{
+
+	/* padding: 8px 20px; */
+	border: none;
+	position: absolute;
+	left: 7%;
+	text-align: center;
+	margin-left: -47px;
+	margin-right: -45.5vw;
+	/* border-radius: 23px; */
+	/* background-color: #333; */
+	color: #fff;
+	/* font-size: 12px; */
+	/* height: 22vh; */
+	margin: auto;
+	width: 41vw;
+	cursor: pointer;
+	/* width: 50%; */
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	display: block;
+	margin: 0 auto;
+
+}
+
+button:hover {
+background-color: #555;
+color: #fff;
+}
